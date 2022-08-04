@@ -20,9 +20,9 @@ stages {
     }
 	  
 	
-    stage('cloud run deploy') {
+    stage('terraform') {
         steps {
-		        sh "pwd"
+		        sh "terraform version"
         }
     }
     
