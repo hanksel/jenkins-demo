@@ -32,7 +32,7 @@ stages {
     }
 	stage('terraform-apply') {
         steps {
-		        sh "terraform apply"
+		        sh "terraform apply -auto-approve"
         }
     }
 	stage('Validacion') {
