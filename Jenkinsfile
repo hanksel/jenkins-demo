@@ -22,7 +22,7 @@ stages {
 	
     stage('terraform') {
         steps {
-		        sh "terraform -help"
+		        sh "terraform plan"
         }
     }
     
